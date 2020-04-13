@@ -2,10 +2,11 @@
 
 [repository](https://github.com/d9w/evolution/) | [website](https://d9w.github.io/evolution/)
 
-This is a course on evolutionary computation. The syllabus can be found
-[here](syllabus.pdf). Classes are organized as individual folders with
-presentations and Jupyter notebook exercises. To get started, follow the
-instructions in [the first class](1_introduction).
+This is a course on evolutionary computation. We focus specifically on the
+evolution of agents with a final project on game playing agent evolution. The
+syllabus can be found [here](syllabus.pdf). Classes are organized as individual
+folders with presentations and Jupyter notebook exercises. To get started,
+follow the instructions in [the first class](1_introduction).
 
 ## Course Outline
 
@@ -16,6 +17,10 @@ instructions in [the first class](1_introduction).
     4. [Genetic Algorithms](https://github.com/d9w/evolution/blob/master/1_introduction/3_GAs.ipynb)
 2. [Evolutionary Strategies](2_strategies)
 3. [Multi-Objective Evolution](3_moo)
+4. [Evolution of programs, graphs, and networks](4_gp)
+5. [Neuroevolution and AGRN evolution](5_neuro)
+6. [Evolution and behavior](6_behavior)
+7. [Evolution with constraints](7_constraints)
 
 ## Project
 
