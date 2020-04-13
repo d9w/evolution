@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>TODO title here</title>
+		<title>1.1 Tools and format</title>
 
 		<link rel="stylesheet" href="../reveal/css/reset.css">
 		<link rel="stylesheet" href="../reveal/css/reveal.css">
@@ -31,16 +31,125 @@
 
 				<section>
 					<h1>Evolutionary Computation</h1>
-					<h3>TODO subtitle</h3>
+					<h3>Tools and format of the class</h3>
           <br />
 					<img src="../imgs/logo.png" width="30%" height="auto">
 				</section>
 
 				<section>
-					<h2>Content Here</h2>
+					<h2>Course overview</h2>
+          <br/>
+          Two main components:
+          <br/>
+          <ul>
+              <li>a tutorial overview of evolutionary computation</li>
+              <li>a project focused on game playing with evolved agents</li>
+          </ul>
+          <br/>
+          <br/>
+          Tutorials:
+          <br/>
+          <ol>
+              <li><a href="https://d9w.github.io/evolution/1_introduction">Introduction</a></li>
+              <li><a href="https://d9w.github.io/evolution/2_strategies">Evolutionary Strategies</a></li>
+              <li><a href="https://d9w.github.io/evolution/3_moo">Multi-Objective Evolution</a></li>
+              <li><a href="https://d9w.github.io/evolution/4_gp">Evolution of programs, graphs, and networks</a></li>
+              <li><a href="https://d9w.github.io/evolution/5_neuro">Genetic representations and operator design</a></li>
+              <li><a href="https://d9w.github.io/evolution/6_behavior">Evolution and behavior</a></li>
+              <li><a href="https://d9w.github.io/evolution/7_constraints">Evolution with constraints</a></li>
+          </ol>
         </section>
 
+        <section>
+            <h2>Course format</h2>
+            <br/>
+            <ul>
+                <li>Follow tutorials individually or in groups</li>
+                <li>Move on to next section on completing exercises</li>
+                <li>Evaluation by pair: you report on a classmates's notebook</li>
+                <li>I'll be available during class hours on Discord</li>
+                <li>Different format for guest lectures</li>
+            </ul>
+        </section>
 
+        <section>
+            <h2>Course tools overview</h2>
+            <br/>
+            <ul>
+                <li><a href="https://discordapp.com/">Discord</a> for chat and asking questions</li>
+                <li><a href="https://zoom.us/">Zoom</a> for meeting</li>
+                <li><a href="https://github.com/">Git</a> for code sharing and class organization</li>
+                <li><a href="https://julialang.org/">Julia</a> for tutorial code</li>
+                <li><a href="https://jupyter.org/">Jupyter</a> for tutorials</li>
+            </ul>
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+            This class is oriented towards a Linux environment, but everything should work on Windows. If you're new to Linux, you can use a virtual machine inside of Windows or OS X; Ubuntu is recommended.
+            </small></div>
+        </section>
+
+        <section>
+            <h2>Git</h2>
+            <br/>
+            <ul>
+                <li>A popular <a href="https://git-scm.com/video/what-is-version-control">Version Control System (VCS)</a></li>
+                <li>Publicly available git servers: <a href="https://github.com/">github</a>, <a href="https://gitlab.com/">gitlab</a>, and <a href="https://www.guru99.com/github-alternative.html">others</a></li>
+                <li>Get set up on <a href="https://help.github.com/en/github/getting-started-with-github/set-up-git">github</a></li>
+                <li>Run directly from a <a href="https://git-scm.com/docs/gittutorial">shell</a> or use a <a href="https://git-scm.com/downloads/guis">GUI</a></li>
+            </ul>
+            <br/>
+            <br/>
+            <img src="../imgs/git.svg" width="80%" height="auto">
+        </section>
+
+        <section>
+            <h2>Julia</h2>
+            <br/>
+            <ul>
+                <li>Scientific computing language; fast but easy to read and understand</li>
+                <li>Extensive <a href="https://docs.julialang.org/en/v1/">documentation</a>, <a href="https://juliaacademy.com/">classes</a>, and <a href="https://discourse.julialang.org/">active community</a></li>
+                <li>Interactive development workflow with <a href="https://junolab.org/">Juno IDE</a>, Jupyter, REPL</li>
+            </ul>
+            <br />
+            <img src="../imgs/benchmarks.svg" width="50%" height="auto">
+        </section>
+
+        <section>
+            <h2>Jupyter</h2>
+            <br/>
+            <ul>
+                <li>Ju (julia) pyt (python) er (R)</li>
+                <li>Notebooks: code and text in the browser</li>
+                <li>Local server with the kernel type</li>
+                <li><a href="https://github.com/JuliaLang/IJulia.jl">IJulia.jl</a></li>
+            </ul>
+            <br/>
+            <br/>
+            <img src="../imgs/jupyter.png" width="50%" height="auto">
+        </section>
+
+        <section>
+            <h2>Exercise</h2>
+            <h3>Hello World notebook</h3>
+            <br/>
+            <ul>
+                <li>Install Julia and Jupyter</li>
+                <li>Create a github account</li>
+                <li><a href="https://help.github.com/en/github/getting-started-with-github/fork-a-repo">Fork</a> this repository</li>
+                <li>Create a notebook in your fork that prints "Hello world"</li>
+                <li>Git commit and push your notebook to github</li>
+                <li>Report your github link in Discord</li>
+            </ul>
+            <br/>
+            <br/>
+            <div class="textbox">
+                You can move on to
+                <a href="https://d9w.github.io/evolution/1_introduction/2_overview.html">the next section</a>
+                once you've finished this exercise
+            </div>
+        </section>
 
 
       </div>
@@ -60,8 +169,8 @@
 
 		<script>
      Reveal.initialize({
-         width: "100%",
-         height: "100%",
+         width: "90%",
+         height: "90%",
          slideNumber: 'c',
          transition: 'none',
          progress: true,

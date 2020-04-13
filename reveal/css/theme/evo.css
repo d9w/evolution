@@ -90,6 +90,11 @@ body {
 /*********************************************
  * OTHER
  *********************************************/
+.reveal .textbox {
+    width: 50%;
+    margin: auto;
+}
+
 .reveal p {
   margin: 20px 0;
   line-height: 1.3; }
