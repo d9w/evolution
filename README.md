@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+# Evolutionary Computation
 
-You can use the [editor on GitHub](https://github.com/d9w/evolutionary_computation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[repository](https://github.com/d9w/evolution/) | [website](https://github.com/d9w/evolution/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is a course on evolutionary computation. The syllabus can be found
+[here](syllabus.pdf). Classes are organized as individual folders with
+presentations and Jupyter notebook exercises. To get started, follow the
+instructions in [the first class](1_introduction).
 
-### Markdown
+## Course Outline
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. [Introduction](1_introduction)
+  1. [Tools and format of this class](https://d9w.github.io/evolution/1_introduction/1_tools.html/)
+  2. [Overview of Evolutionary Computation](https://d9w.github.io/evolution/1_introduction/2_overview.html/)
+  3. [Evolutionary Algorithms](https://github.com/d9w/evolution/blob/master/1_introduction/3_EAs.ipynb)
+  4. [Genetic Algorithms](https://github.com/d9w/evolution/blob/master/1_introduction/3_GAs.ipynb)
+2. [Evolutionary Strategies](2_strategies)
+3. [Multi-Objective Evolution](3_moo)
 
-```markdown
-Syntax highlighted code block
+## Project
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/d9w/evolutionary_computation/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The evaluation in this class will be based on a project. You will use your
+choice of evolutionary methods to optimize an agent for playing games. More
+information about the games and implementations will be here soon.
