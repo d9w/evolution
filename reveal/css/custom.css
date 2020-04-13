@@ -1,0 +1,48 @@
+.reveal section img {
+    margin: 15px 0px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 0px solid #222;
+    box-shadow: 0 0 00px rgba(0, 0, 0, 0.15); }
+
+.reveal .slide-number {
+    font-size: 26px;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.vcenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.reveal .progress {
+    color: #763091;
+}
+
+.reveal .source {
+    color: #999;
+    font-size: 18px;
+}
+
+.reveal .video-source {
+    line-height: 0pt;
+    text-align: right;
+    color: #999;
+    font-size: 18px;
+}
+
+.reveal table td {
+    text-align: left;
+    padding: 0.0em;
+    border-bottom: 0;
+}
+
+.reveal ul {
+    list-style: circle inside;
+}
+
+.purple {
+    color: #763091;
+}
