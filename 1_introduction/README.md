@@ -13,4 +13,8 @@ algorithm and genetic algorithm and run them on toy problems.
     * [slides](https://d9w.github.io/evolution/1_introduction/2_overview.html)
     * [Video - English](https://youtu.be/ijyLA6gqlbU)
     * [Video - French](https://youtu.be/y1AMQR8fU-Q)
-3. [Evolutionary Algorithms](https://github.com/d9w/evolution/blob/master/1_introduction/3_EAs.ipynb)
+3. Evolutionary Algorithms
+    * [slides](https://github.com/d9w/evolution/blob/master/1_introduction/3_EAs.ipynb)
+    * [Video - English](https://youtu.be/pfqPaWkafwI)
+    * [Video - French](https://youtu.be/D_3RlesBCwc)
+
