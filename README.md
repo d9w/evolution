@@ -11,12 +11,13 @@ follow the instructions in [the first class](1_introduction).
 ## Course Outline
 
 1. [Introduction](1_introduction)
-2. [Evolutionary Strategies](2_strategies)
+2. [Genetic Algorithms](2_ga)
 3. [Multi-Objective Evolution](3_moo)
 4. [Evolution of programs, graphs, and networks](4_gp)
 5. [Genetic representation and operator design](5_ops)
-6. [Evolution and behavior](6_behavior)
-7. [Evolution with constraints](7_constraints)
+6. [Evolutionary Strategies](6_strategies)
+7. [Evolution and behavior](7_behavior)
+8. [Evolution with constraints](8_constraints)
 
 ## Project
 
