@@ -10,7 +10,7 @@ led by Sylvain Cussat-Blanc.
 
 1. [Automated Antenna Design with Evolutionary Algorithms](articles/1_Antenna.pdf)
 2. [Cellular Encoding Applied to Neurocontrol](articles/2_Cellular encoding.pdf)
-3. [Evolving Neural Networks through Augmenting Topologies](3_articles/3_NEAT.pdf)
+3. [Evolving Neural Networks through Augmenting Topologies](articles/3_NEAT.pdf)
 4. [Artificial Regulatory Networks and Genetic Programming](articles/4_String GRN.pdf)
 5. [Gene Regulatory Network Evolution Through Augmenting Topologies](articles/5_GRNEAT.pdf)
 6. [Automated Software Transplantation](articles/6_Genetic Improvement.pdf)
