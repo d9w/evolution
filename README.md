@@ -14,8 +14,8 @@ follow the instructions in [the first class](1_introduction).
 2. [Genetic Algorithms](2_ga)
 3. [Multi-Objective Evolution](3_moo)
 4. [Evolution of programs, graphs, and networks](4_gp)
-5. [Genetic representation and operator design](5_ops)
-6. [Evolutionary Strategies](6_strategies)
+5. [Evolutionary Strategies](5_strategies)
+6. [Genetic representation and operator design](6_ops)
 7. [Evolution and behavior](7_behavior)
 8. [Evolution with constraints](8_constraints)
 
