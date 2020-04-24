@@ -1,7 +1,7 @@
 The goal of this project is to get some experience running and comparing
 evolutionary algorithms. The benchmark I would like you to use is games, but if
 you have a specific problem that you would rather work on, feel free to propose
-it. In this project, you must either:
+it, however it must be an agent which acts in some way. In this project, you must either:
 + Compare two existing evolutionary methods
 + Study the parameters of one existing method
 + Test new modifications to an existing method such as a new crossover or mutation method
