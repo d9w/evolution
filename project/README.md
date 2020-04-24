@@ -1,3 +1,5 @@
+# Project - Evolution of agents
+
 The goal of this project is to get some experience running and comparing
 evolutionary algorithms. The benchmark I would like you to use is games, but if
 you have a specific problem that you would rather work on, feel free to propose
