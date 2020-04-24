@@ -23,4 +23,4 @@ follow the instructions in [the first class](1_introduction).
 
 The evaluation in this class will be based on a project. You will use your
 choice of evolutionary methods to optimize an agent for playing games. More
-information about the games and implementations will be here soon.
+information about the games and implementations are [here](project).
