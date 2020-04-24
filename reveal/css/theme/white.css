@@ -4,6 +4,8 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700);
+@import url(https://fonts.googleapis.com/css?family=Lora:700);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
 
@@ -15,10 +17,22 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 42px;
+    font-family: "Lato", serif;
+    font-size: 32px;
+
+#  font-family: "Source Sans Pro", Helvetica, sans-serif;
+#  font-size: 42px;
   font-weight: normal;
   color: #222; }
+
+#footer {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1.2;
+    bottom: 30px;
+    left: 30px;
+    z-index: 1000;
+}
 
 ::selection {
   color: #fff;
@@ -46,8 +60,11 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
+
+#  font-family: "Source Sans Pro", Helvetica, sans-serif;
+#  font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
