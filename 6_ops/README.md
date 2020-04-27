@@ -1,4 +1,5 @@
 # Genetic representation and operator design
+April 30, 2020
 
 This class is an inverted class where students will prepare presentations on
 different articles. These articles showcase a variety of genetic

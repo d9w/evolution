@@ -1,4 +1,5 @@
 # Project - Evolution of agents
+May 14, 2020
 
 The goal of this project is to get some experience running and comparing
 evolutionary algorithms. The benchmark I would like you to use is games, but if

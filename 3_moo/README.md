@@ -1,4 +1,5 @@
 # Multi-objective Optimization
+April 22, 2020
 
 In this class, we look at multi-objective optimization and multi-objective
 evolutionary algoritms (MOEAs). We specifically look at an example of NSGA-II, a
