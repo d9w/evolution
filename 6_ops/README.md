@@ -1,10 +1,12 @@
 # Genetic representation and operator design
 
 This class is an inverted class where students will prepare presentations on
-different articles. These articles showcase a variety of genetic representations
-and evolutionary operators such as specialized mutation, crossover, and
-selection methods. The student presentations will be followed by a discussion
-led by Sylvain Cussat-Blanc.
+different articles. These articles showcase a variety of genetic
+representations and evolutionary operators such as specialized mutation,
+crossover, and selection methods. The student presentations will be followed by
+a discussion led by Sylvain Cussat-Blanc. Each team should prepare a video
+presentation of 20-25 minutes on their assigned article and send a link to the
+video to me and Sylvain by noon on Wednesday, April 29th.
 
 ## Topics
 
