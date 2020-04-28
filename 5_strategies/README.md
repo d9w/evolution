@@ -13,4 +13,4 @@ example of using CMA-ES to search for neural network parameters.
     * [video - English](https://youtu.be/V0ccukpgbL4)
 3. Neuroevolution
     * [notebook](https://github.com/d9w/evolution/blob/master/5_strategies/3_neuroevolution.ipynb)
-    * [video - English]()
+    * [video - English](https://youtu.be/9NwBjoQKjOw)
