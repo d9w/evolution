@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>4.1 Evolution of Programs, Graphs, and Networks</title>
+
+		<link rel="stylesheet" href="../reveal/css/reset.css">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/evo.css">
+		<!-- <link rel="stylesheet" href="../reveal/css/custom.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+		 link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+
+				<section>
+					<h1>Evolutionary Computation</h1>
+					<h3>Evolution of Programs, Graphs, and Networks</h3>
+          <br />
+					<img src="../imgs/logo.png" width="30%" height="auto">
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+          <br/>
+          <ul>
+              <li>4.1 Evolving programs</li>
+              <ul>
+                  <li>GP Overview</li>
+                  <li>Abstract Syntax Trees</li>
+                  <li>Other forms of Genetic Programming</li>
+              </ul>
+              <li>4.2 Evolving Graphs with CGP</li>
+              <li>4.3 Evolving Neural Networks</li>
+          </ul>
+          <br/>
+          <img src="../imgs/gp.png" width="15%">
+          <br/>
+          <small><a href="http://www.genetic-programming.org/">genetic-programming.org</a></small>
+        </section>
+
+        <section>
+            <h2>Automatic Programming</h2>
+            <br/>
+            <div class="textbox">
+                How can computers learn to solve problems without being explicitly programmed? In other words, how can computers be made to do what is needed to be done, without being told exactly how to do it?
+                <br/>
+                <br/>
+                <small>
+                    Attributed to Arthur Samuel, 1950s
+                    <br/>
+                    Koza, John R., and John R. Koza. Genetic programming: on the programming of computers by means of natural selection. Vol. 1. MIT press, 1992.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Genetic Programming</h2>
+            <br/>
+            <img src="../imgs/gp_types_of_eas.png" width="60%">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+            O'Reilly, Una-May, and Erik Hemberg. "Introduction to genetic programming." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2019.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Genetic Programming</h2>
+            <br/>
+            <ul>
+                <li>Koza, John R. 1989. <b>Hierarchical genetic algorithms operating on populations of computer programs.</b> In Proceedings of the 11th International Joint Conference on Artificial Intelligence. San Mateo, CA: Morgan Kaufmann. Volume I. Pages 768-774.</li>
+                <li class="fragment">Koza, John R., <b>Genetic programming: on the programming of computers by means of natural selection.</b> Vol. 1. MIT press, 1992.</li>
+                <li class="fragment">Kinnear, K. E., Langdon, W. B., Spector, L., Angeline, P. J., & O'Reilly, U. M. (Eds.). (1994). <b>Advances in genetic programming.</b> MIT press.</li>
+                <li class="fragment">Koza, John R., et al., eds. <b>Genetic Programming: proceedings of the first annual conference</b>. Mit Press, 1996.</li>
+                <li class="fragment">Banzhaf, Wolfgang, et al. <b>"Genetic Programming — An Introduction: On the Automatic Evolution of Computer Programs and Its Applications."</b> Morgan Kaufmann Publishers. Inc., San Francisco, California (1998).</li>
+                <li class="fragment">Current conferences: GECCO, EuroGP, GPTP</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Genetic Programming</h2>
+            <br/>
+            <img src="../imgs/gp_hype.png" width="40%">
+        </section>
+        <section>
+            <h2>Genetic Programming</h2>
+            <img src="../imgs/symbolic_regression.png" width="50%">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    O'Reilly, Una-May, and Erik Hemberg. "Introduction to genetic programming." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2019.
+                </small>
+            </div>
+        </section>
+        <section>
+            <h2>Symbolic Regression</h2>
+            <br/>
+            <img src="../imgs/gp_regression.png" width="50%">
+            <div class="textbox">
+                <small>
+                    La Cava, William, et al. "Multidimensional genetic programming for multiclass classification." Swarm and evolutionary computation 44 (2019): 260-272.
+                </small>
+            </div>
+        </section>
+        <section>
+            <h2>GP Outline</h2>
+            <img src="../imgs/gp_outline.png" width="50%">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    O'Reilly, Una-May, and Erik Hemberg. "Introduction to genetic programming." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2019.
+                </small>
+            </div>
+        </section>
+        <section>
+            <h2>GP Outline</h2>
+            <img src="../imgs/AlgoG.png" width="40%">
+            <br/>
+            <br/>
+            <div class="textbox">
+            In genetic programming, genomes are <b>interpreted</b> to create programs which are <b>executed</b> to determine fitness
+            </div>
+        </section>
+        <section>
+            <h2>Abstract Syntaxt Trees</h2>
+            <img src="../imgs/gp_ast_1.png" width="50%">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    O'Reilly, Una-May, and Erik Hemberg. "Introduction to genetic programming." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2019.
+                </small>
+            </div>
+        </section>
+        <section>
+            <h2>AST Crossover</h2>
+            <img src="../imgs/gp_ast_2.png" width="50%">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    O'Reilly, Una-May, and Erik Hemberg. "Introduction to genetic programming." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2019.
+                </small>
+            </div>
+        </section>
+        <section>
+            <h2>AST Mutation</h2>
+            <img src="../imgs/gp_ast_3.png" width="50%">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    O'Reilly, Una-May, and Erik Hemberg. "Introduction to genetic programming." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2019.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Genetic Programming Representations</h2>
+            <ul>
+                <li>Abstract Syntax Trees (LISP GP)</li>
+                <li>Graphs (CGP, TPG)</li>
+                <li>Instruction sequences (Linear GP)</li>
+                <li>Grammars (grammatical evolution)</li>
+                <li>Stacks (PushGP)</li>
+            </ul>
+            <br/>
+            <br/>
+            <img src="../imgs/ge-mapping-process.png" width="50%">
+            <br/>
+            <small><a href="https://dev.heuristiclab.com/">Heuristics Lab</a></small>
+        </section>
+
+        <section>
+            <h2>Exercise 1</h2>
+            Briefly describe how GP was used in an article: was the GP applied to a specific problem or evaluated on a specific benchmark? Here are some examples but you're free to look for others.
+            <ul>
+                <li><a href="https://pdfs.semanticscholar.org/469e/bfd13737504d1ae223b01140d2ddbc318e14.pdf">Grammatical Evolution</a></li>
+                <li><a href="http://faculty.hampshire.edu/lspector/pubs/push-gpem-final.pdf">Push GP</a></li>
+                <li><a href="http://www.cs.mun.ca/~banzhaf/papers/ieee_taec.pdf">Linear Genetic Programming</a></li>
+                <li><a href="https://link.springer.com/content/pdf/10.1007/s10710-010-9112-3.pdf">Human competitive results produced by genetic programming</a></li>
+                <li><a href="https://www.researchgate.net/profile/Julian_Miller/publication/2779012_An_empirical_study_of_the_efficiency_of_learning_boolean_functions_using_a_Cartesian_Genetic_Programming_approach/links/0fcfd513799e72d857000000/An-empirical-study-of-the-efficiency-of-learning-boolean-functions-using-a-Cartesian-Genetic-Programming-approach.pdf">Cartesian Genetic Programming</a></li>
+                <li><a href="https://dl.acm.org/doi/pdf/10.1145/2576768.2598291">Multiple Regression Genetic Programming</a></li>
+                <li><a href="http://ncra.ucd.ie/papers/evostar2012_sherry.pdf">FlexGP</a></li>
+                <li><a href="http://www.human-competitive.org/sites/default/files/lones-paper.pdf">IRCGP</a></li>
+                <li><a href="http://www.human-competitive.org/sites/default/files/kelly-paper.pdf">Tangled Problem Graphs</a></li>
+                <li><a href="https://dl.acm.org/doi/pdf/10.1145/3321707.3321866">Genetic Programming with External Memory</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/am/pii/S0960148115303475">Epigenetic Linear Genetic Programming</a></li>
+            </ul>
+        </section>
+
+      </div>
+      <div id="footer-container" style="display:none;">
+          <div id="footer">
+              Evolutionary Computation by Dennis G. Wilson
+              <br />
+              <a href="https://github.com/d9w/evolution/">https://github.com/d9w/evolution/</a>
+              <br />
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+          </div>
+      </div>
+		</div>
+
+		<script src="../reveal/js/reveal.js"></script>
+		<script src="../reveal/js/jquery-3.5.0.min.js"></script>
+
+		<script>
+     Reveal.initialize({
+         width: "90%",
+         height: "90%",
+         slideNumber: 'c',
+         transition: 'none',
+         progress: true,
+         hash: true,
+         center: false,
+         dependencies: [
+             { src: '../reveal/plugin/markdown/marked.js' },
+             { src: '../reveal/plugin/markdown/markdown.js' },
+					   { src: '../reveal/plugin/highlight/highlight.js' },
+             { src: '../reveal/plugin/notes/notes.js', async: true }
+         ]
+     });
+     var footer = $('#footer-container').html();
+     $('div.reveal').append(footer);
+		</script>
+	</body>
+</html>

@@ -1,4 +1,5 @@
 # Introduction
+April 15, 2020
 
 In this first class, we'll cover the format of the class and tools to be used.
 We'll then discuss evolutionary computation in general and why we're studying
