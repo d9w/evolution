@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>4.2 Evolving graphs with CGP</title>
+		<link rel="stylesheet" href="../reveal/css/reset.css">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/white.css">
+		<!-- <link rel="stylesheet" href="../reveal/css/custom.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+		 var link = document.createElement( 'link' );
+		 link.rel = 'stylesheet';
+		 link.type = 'text/css';
+		 link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+		 document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+		  <div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+				    <section>
+					      <h2>Evolutionary Computation</h2>
+					      <h3>Cartesian Genetic Programming</h3>
+                <br />
+					      <img src="../imgs/logo.png" width="30%" height="auto" style="border:0; box-shadow:0 0 0;">
+				    </section>
+
+
+        <section data-background-video="video/solaris.mp4" data-background-color="#000000">
+          <h1>Evolving simple programs for playing Atari games</h1>
+          <br/>
+          <div class="textbox">
+              Dennis G Wilson, Sylvain Cussat-Blanc, Hervé Luga
+          </div>
+				</section>
+
+				<!-- <section> -->
+        <section data-background-video="video/krull.mp4" data-background-color="#000000">
+					<h2>Overview</h2>
+					<ul>
+						<li>Arcade Learning Environment</li>
+						<li>Cartesian Genetic Programming</li>
+						<li>Atari playing with CGP</li>
+            <li>Example programs from results</li>
+					</ul>
+				</section>
+
+				<section>
+            <section data-background-video="video/asteroids.mp4" data-background-color="#000000">
+                <h2>Arcade Learning Environment</h2>
+                <p>[Bellemare et al., 2013]</p>
+                <ul>
+                    <li>HyperNEAT [Hausknecht, 2012]</li>
+                    <li>DQN [Mnih et al., 2015]</li>
+                    <li>Dueling DQN [Wang et al., 2015]</li>
+                    <li>Prioritized experience replay [Schaul et al., 2015]</li>
+                    <li>Double DQN [Hasselt et al., 2016]</li>
+                    <li>A3C [Mnih et al., 2016]</li>
+                    <li>Tangled Problem Graphs [Kelly and Heywood, 2017]</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Deep reinforcement learning</h2>
+                <img class="plain" src="figs/dqn.png">
+                <p><small>[Mnih et al., 2015]</small></p>
+            </section>
+            <section>
+                <h2>HyperNEAT: Multiple representations</h2>
+                <img class="plain" src="figs/hyperneat.png">
+                <p><small>[Hausknecht, 2012]</small></p>
+            </section>
+            <section>
+                <h2>TPG: Decimal Feature Grid</h2>
+                <img class="plain" src="figs/tpg.png">
+                <p><small>[Kelly and Heywood, 2017]</small></p>
+            </section>
+            <section>
+                <h2>TPG: Multi-Task Learning</h2>
+                <img class="plain" src="figs/tpg_multi.png" height="500">
+                <p><small>[Kelly and Heywood, 2017]</small></p>
+            </section>
+        </section>
+
+				<section>
+            <section>
+                <h2>Cartesian Genetic Programming</h2>
+                <img class="plain" src="figs/cgp/cgp.png">
+                <p><small>[Miller, 2011]</small></p>
+            </section>
+            <section>
+                <h2>Floating Point Cartesian Genetic Programming</h2>
+                <img class="plain" src="figs/cgp/fp_cgp.png" width="50%">
+                <p><small>[Wilson, 2018]</small></p>
+            </section>
+            <section>
+                <h2>CGP: Junk nodes</h2>
+                <img class="plain" src="figs/cgp/inactive.png">
+                <p><small>[Miller, 2001]</small></p>
+            </section>
+            <section>
+                <h2>Mixed-Type CGP</h2>
+                <img class="plain" src="figs/cgp/mtcgp.png">
+                <p><small>[Harding et al., 2012]</small></p>
+            </section>
+            <section>
+                <h2>Image-Processing CGP</h2>
+                <img class="plain" src="figs/cgp/ipcgp.png">
+                <p><small>[Harding et al., 2013]</small></p>
+            </section>
+            <section>
+                <h2>Cartesian Genetic Programming</h2>
+                <img class="plain" src="figs/ipcgp.png" height="auto"  width="30%">
+                <p><small>[Harding et al., 2013]</small></p>
+            </section>
+
+            <section>
+                <h2>Cartesian Genetic Programming</h2>
+                <img class="plain" src="figs/filters.png" height="auto" width="30%">
+                <p><small>[Paris et al., 2015]</small></p>
+            </section>
+
+        </section>
+
+				<section>
+            <section>
+                <h2>CGP for Atari playing</h2>
+                <img class="plain" src="figs/AlgoG.png"><br/>
+                1+λ ES<br/>
+                Fitness: Total reward over 1 game
+            </section>
+            <section>
+                <h2>CGP for Atari playing</h2>
+                <img class="plain" src="figs/scheme.png">
+            </section>
+            <section>
+                <h2>Mathematical functions</h2>
+                <img class="plain" src="figs/func_math.png">
+            </section>
+            <section>
+                <h2>Statistical functions</h2>
+                <img class="plain" src="figs/func_stats.png">
+            </section>
+            <section>
+                <h2>Array functions</h2>
+                <img class="plain" src="figs/func_lists.png">
+            </section>
+        </section>
+
+				<section>
+            <section data-background-video="video/defender.mp4" data-background-color="#000000">
+                <h2>Results</h2>
+            </section>
+
+            <section>
+                <h6>Centipede</h6>
+                <video height="400px" autoplay loop controls>
+                <source src="video/centipede.mp4" type="video/mp4">
+                </video>
+                <img class="plain" src="figs/centipede_graph.png" height="400px">
+                <br/>
+                <br/>
+                <small>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Human</th> <th>Double</th> <th>DQN</th>
+                            <th>Prioritized</th> <th>A3C:FF</th>
+                            <th>A3C:LSTM</th> <th>TPG</th> <th>HyperNEAT</th>
+                            <th>CGP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>11963</td> <td>3853.5</td> <td>4881</td>
+                            <td>3421.9</td> <td>3755.8</td> <td>1997</td>
+                            <td>34731.7</td> <td>25275.2</td> <td>24708</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </small>
+            </section>
+
+            <section>
+                <h2>Kung Fu Master</h2>
+                <video height="400px" autoplay loop controls>
+                <source src="video/kung_fu_master.mp4" type="video/mp4">
+                </video>
+                <img class="plain" src="figs/kung_fu_master_graph.png" height="400px">
+                <br/>
+                <br/>
+                <small>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Human</th> <th>Double</th> <th>DQN</th>
+                            <th>Prioritized</th> <th>A3C:FF</th>
+                            <th>A3C:LSTM</th> <th>TPG</th> <th>HyperNEAT</th>
+                            <th>CGP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>22736</td> <td>30207</td> <td>24288</td>
+                            <td>31244</td> <td>28819</td> <td>40835</td>
+                            <td></td> <td>7720</td> <td>57400</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </small>
+
+            </section>
+
+            <section>
+            <!-- <section data-background="figs/boxing_graph.png" data-background-size="1200px"> -->
+                <h2>Boxing</h2>
+                <video height="400px" autoplay loop controls>
+                <source src="video/boxing.mp4" type="video/mp4">
+                </video>
+                <img class="plain" src="figs/boxing_graph.png" height="400px">
+                <br/>
+                <br/>
+                <small>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Human</th> <th>Double</th> <th>DQN</th>
+                            <th>Prioritized</th> <th>A3C:FF</th>
+                            <th>A3C:LSTM</th> <th>TPG</th> <th>HyperNEAT</th>
+                            <th>CGP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4.3</td> <td>73.5</td> <td>77.3</td>
+                            <td>68.6</td> <td>59.8</td> <td>37.3</td> <td></td>
+                            <td>16.4</td> <td>38.4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </small>
+            </section>
+
+            <section>
+                <h2>Comparison</h2>
+                <small>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Game</th> <th>Human</th> <th>Double</th>
+                            <th>DQN</th> <th>Prioritized</th> <th>A3C:FF</th>
+                            <th>HyperNEAT</th> <th>CGP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Asteroids</td> <td>13157</td> <td>1193.2</td>
+                            <td>2035.4</td> <td>1654</td> <td>4474.5</td>
+                            <td>1694</td>
+                            <td>9412</td>
+                        </tr>
+                        <tr>
+                            <td>Defender</td> <td></td> <td>27510</td>
+                            <td>33996</td> <td>21093.5</td> <td>56533</td>
+                            <td>14620</td>
+                            <td>993010</td>
+                        </tr>
+                        <tr>
+                            <td>Gravitar</td> <td>2672</td> <td>200.5</td>
+                            <td>297</td> <td>218</td> <td>303.5</td>
+                            <td>370</td>
+                            <td>2350</td>
+                        </tr>
+                        <tr>
+                            <td>JamesBond</td> <td>406.7</td> <td>573</td>
+                            <td>835.5</td> <td>3511.5</td> <td>541</td>
+                            <td>5660</td> <td>6130</td>
+                        </tr>
+                        <tr>
+                            <td>Kangaroo</td> <td>3035</td> <td>11204</td>
+                            <td>10334</td> <td>10241</td> <td>94</td>
+                            <td>800</td> <td>1400</td>
+                        </tr>
+                        <tr>
+                            <td>Krull</td> <td>2395</td> <td>6796.1</td>
+                            <td>8051.6</td> <td>7406.5</td> <td>5560</td>
+                            <td>12601.4</td> <td>9086.8</td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Pacman</td> <td>15693</td> <td>1241.3</td>
+                            <td>2250.6</td> <td>1824.6</td> <td>653.7</td>
+                            <td>3408</td> <td>2568</td>
+                        </tr>
+                        <tr>
+                            <td>Private Eye</td> <td>69571</td> <td>-575.5</td>
+                            <td>292.6</td> <td>179</td> <td>206.9</td>
+                            <td>10747.4</td> <td>12702.2</td>
+                        </tr>
+                        <tr>
+                            <td>Skiing</td> <td></td> <td>-11490.4</td>
+                            <td>-11928</td> <td>-10852.8</td> <td>-10911.1</td>
+                            <td>-7983.6</td> <td>-9011</td>
+                        </tr>
+                        <tr>
+                            <td>Solaris</td> <td></td> <td>810</td>
+                            <td>1768.4</td> <td>2238.2</td> <td>1956</td>
+                            <td>160</td> <td>8324</td>
+                        </tr>
+                        <tr>
+                            <td>YarsRevenge</td> <td></td> <td>6270.6</td>
+                            <td>25976.5</td> <td>5965.1</td> <td>7157.5</td>
+                            <td>24096.4</td> <td>28838.2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+                Two years later: <a href="https://arxiv.org/abs/2003.13350">Agent 57</a> outperforms many of these
+                </small>
+            </section>
+        </section>
+      <div id="footer-container" style="display:none;">
+          <div id="footer">
+              Evolutionary Computation by Dennis G. Wilson
+              <br />
+              <a href="https://github.com/d9w/evolution/">https://github.com/d9w/evolution/</a>
+              <br />
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+          </div>
+      </div>
+		</div>
+
+		<script src="../reveal/js/reveal.js"></script>
+		<script src="../reveal/js/jquery-3.5.0.min.js"></script>
+
+		<script>
+     Reveal.initialize({
+         width: "90%",
+         height: "90%",
+         slideNumber: 'c',
+         transition: 'none',
+         progress: true,
+         hash: true,
+         center: false,
+         dependencies: [
+             { src: '../reveal/plugin/markdown/marked.js' },
+             { src: '../reveal/plugin/markdown/markdown.js' },
+					   { src: '../reveal/plugin/highlight/highlight.js' },
+             { src: '../reveal/plugin/notes/notes.js', async: true }
+         ]
+     });
+     var footer = $('#footer-container').html();
+     $('div.reveal').append(footer);
+		</script>
+	</body>
+</html>

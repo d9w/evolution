@@ -1,4 +1,5 @@
 # Genetic Algorithms
+April 17, 2020
 
 In this class, we will discuss Genetic Algorithms, looking at different
 selection and crossover methods for optimization on the Rastrigin and OneMax
