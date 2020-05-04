@@ -14,3 +14,4 @@ algorithm in depth. Finally, we look at coevolutionary algorithms.
     * [video - English](https://youtu.be/Pip0qQypMJA)
 3. Coevolutionary Algorithms
     * [slides](https://d9w.github.io/evolution/7_behavior/3_coevo.html)
+    * [video - English](https://youtu.be/W9fAjEcXsmY)
