@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>7.1 Behavior and Novelty</title>
+
+		<link rel="stylesheet" href="../reveal/css/reset.css">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/evo.css">
+		<!-- <link rel="stylesheet" href="../reveal/css/custom.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+		 link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+
+				<section>
+					<h1>Evolutionary Computation</h1>
+					<h3>Behavior and Novelty</h3>
+          <br />
+					<img src="../imgs/logo.png" width="30%" height="auto">
+				</section>
+
+        <section>
+            <h2>Evolving programs and networks</h2>
+            <br/>
+            <img src="../imgs/gp_types_of_eas.png" width="60%">
+            <br/>
+            These individuals have a <b>behavior</b>.
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    O'Reilly, Una-May, and Erik Hemberg. "Introduction to genetic programming." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2019.
+                </small>
+            </div>
+        </section>
+
+				<section>
+					<h2>Evolution of behavior</h2>
+          <br/>
+          <img src="../imgs/behavior_example_1.png" width="40%">
+          <br/>
+					Similar genes, different behaviors
+          <br/>
+          <br/>
+          <div class="textbox">
+              <small>
+                  Mouret, J-B., and Stéphane Doncieux. "Encouraging behavioral
+                  diversity in evolutionary robotics: An empirical study."
+                  Evolutionary computation 20.1 (2012): 91-133.
+              </small>
+          </div>
+        </section>
+
+				<section>
+					  <h2>Evolution of behavior</h2>
+            <br/>
+            <img src="../imgs/behavior_example_2.png" width="40%">
+            <br/>
+					  Different genes, similar behaviors
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Mouret, J-B., and Stéphane Doncieux. "Encouraging behavioral
+                    diversity in evolutionary robotics: An empirical study."
+                    Evolutionary computation 20.1 (2012): 91-133.
+                </small>
+            </div>
+        </section>
+
+				<section>
+					  <h2>Behavior Space</h2>
+            <br/>
+            <img src="../imgs/behavior_space.png" width="40%">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Mouret, J-B., and Stéphane Doncieux. "Encouraging behavioral
+                    diversity in evolutionary robotics: An empirical study."
+                    Evolutionary computation 20.1 (2012): 91-133.
+                </small>
+            </div>
+        </section>
+
+				<section>
+					  <h2>Evaluating behavior</h2>
+            <br/>
+            <video height="400px" autoplay loop controls>
+                <source src="../4_gp/video/ms_pacman.mp4" type="video/mp4">
+            </video>
+            <br/>
+            <br/>
+            <p class="fragment">
+                Evolutionary fitness:
+                <br/>
+            Sum total reward or final outcome over an episode
+            </p>
+        </section>
+
+				<section>
+					  <h2>Measuring behavior</h2>
+            <br/>
+            <img src="../imgs/behavior_distance.png" width="20%">
+            <br/>
+            How do we define the distance between two behaviors?
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Gomez, Faustino J. "Sustaining diversity using behavioral information distance." Proceedings of the 11th Annual conference on Genetic and evolutionary computation. 2009.
+                </small>
+            </div>
+        </section>
+
+				<section>
+					  <h2>Population diversity</h2>
+            <br/>
+            <img src="../imgs/rastrigin.gif" width="40%">
+            <br/>
+            <div class="textbox">
+                We need to encourage diversity in the <b>behavior space</b>, ie behavioral diversity.
+            </div>
+        </section>
+
+				<section>
+					  <h2>Behavior Characterization</h2>
+            <br/>
+            <img src="../imgs/map_1.png" width="40%">
+            <br/>
+        </section>
+
+				<section>
+					  <h2>Behavior Characterization</h2>
+            <br/>
+            <img src="../imgs/map_2.png" width="40%">
+            <br/>
+            $F(i) = \sqrt{(x_i-x_{final})^2+(y_i-y_{final})^2}$
+        </section>
+
+				<section>
+					  <h2>Behavior Characterization</h2>
+            <br/>
+            <img src="../imgs/map_3.png" width="40%">
+            <br/>
+            <p class="fragment">
+            $dist(i, j) = \sqrt{(x_i-x_j)^2+(y_i-y_j)^2}$
+            </p>
+            <p class="fragment">
+            Behavior characterization for a map:
+            <br/>
+            Final position
+            </p>
+        </section>
+
+        <section>
+            <h2>Novelty Search</h2>
+            <br/>
+            <ul>
+                <li>During evolution, keep an behavior archive</li>
+                <li>For each individual $x$, find $k$ nearest neighbors $\mu$ in current population or behavior archive</li>
+                <li>Calculate average distance $\rho(x) = \frac{1}{k}\sum_{i=0}^k dist(x, \mu_i)$</li>
+                <li>if $\rho(x) > \rho_{\texttt{min}}$, add $x$ to the archive</li>
+                <li>Select individuals based on $\rho$</li>
+            </ul>
+            <br/>
+            <br/>
+            <a href="http://eplex.cs.ucf.edu/noveltysearch/userspage/demo.html">Demonstration</a>
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Lehman, Joel, and Kenneth O. Stanley. "Abandoning objectives: Evolution through the search for novelty alone." Evolutionary computation 19.2 (2011): 189-223.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Open-Ended Evolution</h2>
+            <br/>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jQaXtbrVNaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Ackley, David H., and Elena S. Ackley. "The ulam programming language for artificial life." Artificial life 22.4 (2016): 431-450.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Novelty Search with Local Competition</h2>
+            <br/>
+            <ul>
+                <li>Includes objective function fitness in evaluation</li>
+                <li>Same base as novelty search</li>
+                <li>When calculating $\rho(x)$, compare $x$ and $k$ nearest neighbors on objective fitness function $F$</li>
+                <li>Local competition objective: $\Sigma_{i=0}^k [ F(x_i) > F(k) ]$</li>
+                <li>NSGA-II with local competition objective and $\rho$</li>
+            </ul>
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Lehman, Joel, and Kenneth O. Stanley. "Evolving a diversity of virtual creatures through novelty search and local competition." Proceedings of the 13th annual conference on Genetic and evolutionary computation. 2011.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Novelty Search with Local Competition</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UELbkBeNIoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WQUVl8uzm0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ArrFlh3npoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N3YD3Uau61g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>Quality diversity</h2>
+            <br/>
+            <img src="../imgs/qd_framework_2.png" width="40%">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+            Cully, Antoine, and Yiannis Demiris. "Quality and diversity optimization: A unifying modular framework." IEEE Transactions on Evolutionary Computation 22.2 (2017): 245-259.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Multi-modal optimization</h2>
+            <br/>
+            <div class="textbox" style="width:70%;">
+            <ul>
+                <li>Quality diversity is similar to multi-objective optimization: maximize objective function and novelty metric</li>
+                <li>Similar to multi-modal optimization: find many different good solutions</li>
+                <li>Focus on finding <b>niches</b> at the same time or stored in an archive</li>
+                <li>Mahfoud, Samir W. Niching methods for genetic algorithms. Diss. University of Illinois at Urbana-Champaign, 1995.</li>
+                <li>Preuss, Mike. Multimodal optimization by means of evolutionary algorithms. Springer International Publishing, 2015.</li>
+                <li>Combination with QD a current topic</li>
+                <li>The difference: quality diversity search is <b>divergent</b>, looking for <b>new behaviors</b></li>
+            </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Exercise</h2>
+            <br/>
+            <div class="textbox">
+            Discuss with your project team about a behavior characterization for agents in your game. Try to come up with multiple behavior characterizations and consider what a diversity of these characterizations would lead to in terms of game strategy. Consider the computational cost of keeping an archive and comparing to this archive over time. Finally, report the results of your discussion in Discord.
+            </div>
+        </section>
+
+      </div>
+      <div id="footer-container" style="display:none;">
+          <div id="footer">
+              Evolutionary Computation by Dennis G. Wilson
+              <br />
+              <a href="https://github.com/d9w/evolution/">https://github.com/d9w/evolution/</a>
+              <br />
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+          </div>
+      </div>
+		</div>
+
+		<script src="../reveal/js/reveal.js"></script>
+		<script src="../reveal/js/jquery-3.5.0.min.js"></script>
+
+		<script>
+     Reveal.initialize({
+         width: "90%",
+         height: "90%",
+         slideNumber: 'c',
+         transition: 'none',
+         progress: true,
+         hash: true,
+         center: false,
+         dependencies: [
+             { src: '../reveal/plugin/markdown/marked.js' },
+             { src: '../reveal/plugin/math/math.js' },
+             { src: '../reveal/plugin/markdown/markdown.js' },
+					   { src: '../reveal/plugin/highlight/highlight.js' },
+             { src: '../reveal/plugin/notes/notes.js', async: true }
+         ]
+     });
+     var footer = $('#footer-container').html();
+     $('div.reveal').append(footer);
+		</script>
+	</body>
+</html>

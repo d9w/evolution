@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>7.3 Coevolution</title>
+
+		<link rel="stylesheet" href="../reveal/css/reset.css">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/evo.css">
+		<!-- <link rel="stylesheet" href="../reveal/css/custom.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+		 link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+
+				<section>
+					<h1>Evolutionary Computation</h1>
+					<h3>Coevolution</h3>
+          <br />
+					<img src="../imgs/logo.png" width="30%" height="auto">
+				</section>
+
+				<section>
+					<h2>Natural diversity</h2>
+          <br/>
+					<img src="../imgs/camouflage.png" width="30%" height="auto">
+          <br/>
+          <br/>
+          <div class="textbox">
+              <small>
+          O’Reilly, Una-May, et al. "Adversarial genetic programming for cyber security: A rising application domain where GP matters." Genetic Programming and Evolvable Machines. Twentieth Anniversary Issue (2020).
+              </small>
+          </div>
+        </section>
+
+        <section>
+					  <h2>Competitive Coevolution</h2>
+            <br/>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mA8z0GndiYI?start=545" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Sims, Karl. "Evolving 3D morphology and behavior by competition." Artificial life 1.4 (1994): 353-372.
+                </small>
+            </div>
+        </section>
+
+        <section>
+					  <h2>Competitive Coevolution</h2>
+            <br/>
+					  <img src="../imgs/competitions.png" width="14%" height="auto">
+            <br/>
+            Fitness: number of wins in competitions
+            <br/>
+            <div class="textbox">
+                <small>
+                    Sims, Karl. "Evolving 3D morphology and behavior by competition." Artificial life 1.4 (1994): 353-372.
+                </small>
+            </div>
+        </section>
+
+				<section>
+					  <h2>Competitive Coevolution</h2>
+            <br/>
+					  <img src="../imgs/cybersecurity.png" width="60%" height="auto">
+            <br/>
+            <br/>
+            Application to cybersecurity
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    O’Reilly, Una-May, et al. "Adversarial genetic programming for cyber security: A rising application domain where GP matters." Genetic Programming and Evolvable Machines. Twentieth Anniversary Issue (2020).
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Cooperative Coevolution</h2>
+            <br/>
+					  <img src="../imgs/cooperation.png" width="40%" height="auto">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Antonio, Luis Miguel, and Carlos A. Coello Coello. "Coevolutionary multiobjective evolutionary algorithms: Survey of the state-of-the-art." IEEE Transactions on Evolutionary Computation 22.6 (2017): 851-865.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Cooperative Coevolution</h2>
+            <br/>
+					  <img src="../imgs/fitness_decomp.png" width="40%" height="auto">
+            <br/>
+            <br/>
+            Fitness: based on combination of individuals (function decomposition)
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Potter, Mitchell A., and Kenneth A. De Jong. "Cooperative coevolution: An architecture for evolving coadapted subcomponents." Evolutionary computation 8.1 (2000): 1-29.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Pathologies</h2>
+            <br/>
+					  <img src="../imgs/rock_paper_scissors.png" width="30%" height="auto">
+            <br/>
+            <br/>
+            <b>Intransitivity</b>: cycling between different solutions
+        </section>
+
+        <section>
+            <h2>Pathologies</h2>
+            <br/>
+					  <img src="../imgs/red_queen.png" width="40%" height="auto">
+            <br/>
+            <br/>
+            <b>Red Queen Effect (CS)</b>
+            <br/>
+            <div class="textbox">
+            Changes that improve the quality of an
+            individual do not increase its selection
+            probability because of changes to other
+            coevolving individuals
+            </div>
+        </section>
+
+        <section>
+            <h2>Exercise</h2>
+            <br/>
+            <div class="textbox">
+                Look through the attached <a href="coevolution.pdf">review article</a> and find a coevolutionary algorithm cited. Explain this coevolutionary algorithm in chat, citing if it is competitive, cooperative, or both, and if it addresses any specific coevolutionary pathology.
+            </div>
+        </section>
+
+
+
+      </div>
+      <div id="footer-container" style="display:none;">
+          <div id="footer">
+              Evolutionary Computation by Dennis G. Wilson
+              <br />
+              <a href="https://github.com/d9w/evolution/">https://github.com/d9w/evolution/</a>
+              <br />
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+          </div>
+      </div>
+		</div>
+
+		<script src="../reveal/js/reveal.js"></script>
+		<script src="../reveal/js/jquery-3.5.0.min.js"></script>
+
+		<script>
+     Reveal.initialize({
+         width: "90%",
+         height: "90%",
+         slideNumber: 'c',
+         transition: 'none',
+         progress: true,
+         hash: true,
+         center: false,
+         dependencies: [
+             { src: '../reveal/plugin/markdown/marked.js' },
+             { src: '../reveal/plugin/markdown/markdown.js' },
+					   { src: '../reveal/plugin/highlight/highlight.js' },
+             { src: '../reveal/plugin/notes/notes.js', async: true }
+         ]
+     });
+     var footer = $('#footer-container').html();
+     $('div.reveal').append(footer);
+		</script>
+	</body>
+</html>
