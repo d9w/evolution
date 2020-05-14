@@ -17,10 +17,12 @@ the rigor of the experiments you do, but the ambition of the platform or
 challenge you do is up to you. You must work in teams of 3-5 and you must verify
 your team and project plan with me before May 4th.
 
-We will work during class hours on the project on May 7th and May 13th. Final
-presentations of 20 minutes will take place on the 14th. Please send me your
-completed video presentations by the end of the day on the 13th, no extensions
-possible.
+We will work during class hours on the project on May 7th, 13th, and 14th. Please post your
+completed video presentations by the end of the day on May 17th.
+
+Here is a presentation explaining the evolution of agents and showing an example:
+  + [slides](https://github.com/d9w/evolution/project/Project.ipynb)
+  + [video - English](https://youtu.be/ByGsyRRvYuk)
 
 Here are some open-source evolutionary libraries you can use, but you can also
 feel free to write your own implementations:
