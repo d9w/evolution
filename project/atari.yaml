@@ -1,0 +1,22 @@
+# Cambrian.jl settings
+seed: 0
+d_fitness: 1
+n_population: 5
+n_elite: 1
+n_gen: 1000
+log_gen: 1
+save_gen: 10
+m_rate: 0.1
+# MTCGP.jl settings
+rows: 3
+columns: 100
+out_m_rate: 0.3
+functions:
+  - f_add
+  - f_subtract
+  - f_mult
+  - f_abs
+  - f_exp
+  - f_sin
+  - f_lt
+  - f_gt
