@@ -3,24 +3,26 @@
 [repository](https://github.com/d9w/evolution/) | [website](https://d9w.github.io/evolution/)
 
 This is a course on evolutionary computation. We focus specifically on the
-evolution of agents with a final project on game playing agent evolution. The
+evolution of agents with a final project on research topics in evolution. The
 syllabus can be found [here](syllabus.pdf). Classes are organized as individual
 folders with presentations and Jupyter notebook exercises. To get started,
 follow the instructions in [the first class](1_introduction).
 
-## Course Outline
+## Course Schedule
 
-1. [Introduction](1_introduction)
-2. [Genetic Algorithms](2_ga)
-3. [Multi-Objective Evolution](3_moo)
-4. [Evolution of programs, graphs, and networks](4_gp)
-5. [Evolutionary Strategies](5_strategies)
-6. [Genetic representation and operator design](6_ops)
-7. [Evolution and behavior](7_behavior)
-8. [Evolution with constraints](8_constraints)
-
-## Project
-
-The evaluation in this class will be based on a project. You will use your
-choice of evolutionary methods to optimize an agent for playing games. More
-information about the games and implementations are [here](project).
+ | 
+--- | ---
+mar. 04/05 | [Introduction](1_introduction)
+jeu. 06/05 | [Genetic Algorithms](2_ga)
+lun. 10/05 | [Evolutionary Strategies](5_strategies)
+mar. 11/05 | [Multi-Objective Evolution](3_moo)
+mar. 18/05 | [Genetic Programming](4_gp)
+mar. 25/05 | [Neuroevolution](4_gp)
+jeu. 27/05 | [Genetic representation and operator design](6_ops)
+ven. 28/05 | [Evolution and behavior](7_behavior)
+lun. 31/05 | [Evolution with constraints](8_constraints)
+mar. 01/06 | [Evolution with constraints](8_constraints)
+mer. 02/06 | [Project](project)
+jeu. 03/06 | [Project](project)
+mar. 08/06 | [Project](project)
+mer. 09/06 | [Presentations](project)
