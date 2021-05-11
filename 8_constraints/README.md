@@ -1,5 +1,5 @@
 # Evolution with constraints
-May 5, 2020
+
 
 This class is an invited lecture by [Élise
 Vareilles](https://www.linkedin.com/in/elise-vareilles-9785331/), professor at
