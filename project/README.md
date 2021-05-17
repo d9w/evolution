@@ -22,7 +22,7 @@ completed video presentations by the end of the day on May 17th.
 
 Here is a presentation explaining the evolution of agents and showing an example:
   + [notebook](https://github.com/d9w/evolution/blob/master/project/Project.ipynb)
-  + [video - English](https://youtu.be/ByGsyRRvYuk)
+  + [video](https://youtu.be/ByGsyRRvYuk)
 
 Here are some open-source evolutionary libraries you can use, but you can also
 feel free to write your own implementations:
