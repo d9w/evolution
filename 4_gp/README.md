@@ -9,6 +9,3 @@ In this tutorial, we discuss the evolution of programs, graphs, and networks, go
 2. Evolving graphs with CGP
     * [slides](https://d9w.github.io/evolution/4_gp/2_cgp.html)
     * [video](https://youtu.be/fJX0Dr54huY)
-3. Evolving neural networks
-    * [slides](https://d9w.github.io/evolution/4_gp/3_anns.html)
-    * [video](https://youtu.be/FSskrPvQGlY)
