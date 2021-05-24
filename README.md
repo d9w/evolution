@@ -15,7 +15,7 @@ Schedule |
 10/05 | [Evolutionary Strategies](5_strategies)
 11/05 | [Multi-Objective Evolution](3_moo)
 18/05 | [Genetic Programming](4_gp)
-25/05 | [Neuroevolution](4_gp)
+25/05 | [Neuroevolution](neuroevolution)
 27/05 | [Genetic representation and operator design](6_ops)
 28/05 | [Evolution and behavior](7_behavior)
 31/05 | [Evolution with constraints](8_constraints)
