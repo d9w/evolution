@@ -26,7 +26,9 @@ The deliverable for this project is a presentation of 15 minutes. Your team shou
 + a study of hyperparameter impact on performance
 + presentation of final results: evolution, agent video
 
+An example of random search for a policy network on MinAtar is [here](https://github.com/d9w/evolution/blob/master/project/Random Search on MinAtar.ipynb).
+
 Here is a presentation explaining the evolution of agents and showing an example:
-  + [notebook](https://github.com/d9w/evolution/blob/master/project/Project.ipynb)
+  + [notebook](https://github.com/d9w/evolution/blob/master/project/agent_evolution.ipynb)
   + [video](https://youtu.be/ByGsyRRvYuk)
 
