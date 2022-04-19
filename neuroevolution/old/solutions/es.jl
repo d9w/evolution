@@ -14,7 +14,7 @@ function ES(layers::Array, num_generations::Int, f::Function, npop::Int=50, sigm
         population = Array{Individual}(undef, 𝜆)
         best = 1
         for j in eachindex(population)
-            new_genes = expert.genes + randn(n) .* sigma
+            new_genes = µ.genes + randn(n) .* sigma
             population[j] = Individual(layers, new_genes)
             evaluate!(population[j], f)
             if population[j].fitness > population[best].fitness
