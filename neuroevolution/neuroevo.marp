@@ -1,0 +1,247 @@
+---
+theme: gaia
+_class: lead
+paginate: true
+backgroundColor: #fff
+backgroundImage: url('../imgs/marp-background.jpg')
+marp: true
+# footer: Neuroevolution 
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
+![bg left:50% 80%](../imgs/logo.png)
+
+# **Evolution of Neural Networks**
+
+Paul Templier
+
+paul.templier@isae-supaero.fr
+
+---
+## Agent representation
+
+![center h:12cm](../imgs/agent_representations.png)
+
+--- 
+
+<!-- _class: lead -->
+
+# Artificial Neural Networks
+
+---
+## Biological neuron
+
+![center h:12cm](../imgs/neuron.jpg)
+
+---
+## Artificial neuron
+
+![center h:12cm](../imgs/neuron_model.jpeg)
+
+<!-- $w_i$: weights  
+$x_i$: output of previous neurons  
+$b$: bias  
+$f$: activation function to break linearity  -->
+
+---
+## Artificial Neural Network
+
+![center h:12cm](../imgs/neural_network.png)
+
+---
+
+## History
+
+![center h:12cm](../imgs/intro_neuroevolution.png)
+
+<style scoped>
+p {
+  font-size: 16px;
+}
+</style>
+
+*Miikkulainen, Risto. "Evolution of neural networks." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2017*
+
+---
+#  Exercise
+
+Break into groups and discuss:
+
+- What do we need in the genome to optimize a neural network? 
+- How would you encode it?
+- Can you find mutation and crossover operators on your encoding?
+
+--- 
+
+<!-- _class: lead -->
+
+# Evolving Neural Networks
+
+---
+##
+![bg left:60% 90%](../imgs/cellular_encoding.png)
+
+
+*Adding learning to the cellular development of neural networks: Evolution and the Baldwin effect*
+
+Gruau, Frederic, and Darrell Whitley (1993)
+
+---
+##
+![bg left:60% 90%](../imgs/barr.png)
+
+*A simulation testbed for the study of multicellular development: The multiple mechanisms of morphogenesis*
+
+Fleischer, Kurt, and Alan H. Barr. (1994) 
+
+---
+### NeuroEvolution of Augmenting Topologies (NEAT)
+![center 90%](../imgs/neat_encoding.png)
+
+
+<style scoped>
+p {
+  font-size: 16px;
+}
+</style>
+
+Stanley, Kenneth O., and Risto Miikkulainen. "Evolving neural networks through augmenting topologies." Evolutionary computation 10.2 (2002): 99-127 
+
+---
+### Fixed architecture
+
+![center h:12cm](../imgs/ne_basics.png)
+
+<style scoped>
+p {
+  font-size: 16px;
+}
+</style>
+
+Miikkulainen, Risto. "Evolution of neural networks." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2017.
+
+
+--- 
+### Today
+<style scoped>
+p {
+  font-size: 16px;
+}
+</style>
+
+![left h:5cm](../imgs/openai.png) 
+
+Andrej Karpathy, Tim Salimans, Jonathan Ho, Peter Chen, Ilya Sutskever, John Schulman, Greg Brockman, Szymon Sidor (2017)
+
+![left h:5cm](../imgs/deep_neuroevo.png)
+
+Felipe Petroski Such, Vashisht Madhavan, Edoardo Conti, Joel Lehman, Kenneth O. Stanley, Jeff Clune, ICLR 2019
+
+---
+### Issues
+
+![center h:12cm](../imgs/ne_problems.png)
+
+<style scoped>
+p {
+  font-size: 16px;
+}
+</style>
+
+Miikkulainen, Risto. "Evolution of neural networks." Proceedings of the Genetic and Evolutionary Computation Conference Companion. 2017.
+
+--- 
+
+<!-- _class: lead -->
+
+# Encoding Neural Networks
+
+---
+### Indirect encoding
+
+![center h:12cm](../imgs/encoding.png)
+
+---
+### HyperNEAT
+
+![center](../imgs/indirect_hyperneat.png)
+![center](../imgs/hyperneat.png)
+
+<style scoped>
+p {
+  font-size: 16px;
+}
+</style>
+
+Stanley, Kenneth O.; D'Ambrosio, David B.; Gauci, Jason (2009-01-14). "A Hypercube-Based Encoding for Evolving Large-Scale Neural Networks". Artificial Life journal 15(2), Cambridge, MA: MIT Press, 2009
+
+---
+### Geometric Encoding for NeuroEvolution (GENE)
+
+![center](../imgs/indirect_transform.png)
+
+![center h:10cm](../imgs/geometric.drawio.png)
+
+<style scoped> 
+p {
+  font-size: 16px;
+}
+</style>
+
+Paul Templier, Emmanuel Rachelson, and Dennis G. Wilson. 2021. A Geometric Encoding for Neural Network Evolution. In 2021 Genetic and Evolutionary Computation Conference (GECCO ’21)
+
+--- 
+<!-- _class: lead -->
+<!-- paginate: false -->
+
+# Evogym
+
+evolutiongym.github.io/
+
+*Evolution Gym: A Large-Scale Benchmark for Evolving Soft Robots*
+Bhatia & al, NeurIPS 2021
+
+---
+## Tasks
+**Walker-v0** (Easy)
+![center h:10cm](../imgs/evogym_walker.gif) 
+
+---
+## Tasks
+
+**Thrower-v0** (Medium)
+![center 90%](../imgs/evogym_thrower.gif)
+
+**Climb-v2** (Hard)
+![center 90%](../imgs/evogym_climb.gif)
+
+---
+## Robots
+**State:**
+
+![bg left 90%](../imgs/evogym_state.drawio.png)
+
+- (x, y) for all nodes
+- speed, orientation of center of mass
+
+**Actions:**
+- Each muscle
+- Contract / expand
+- Continuous
+
+---
+# Notebook
+## Libraries 
+
+- **torch**: neural networks
+- **gym**: RL environments
+- **evogym**: coevolution of voxel-based robots
+- **tqdm**: progress bars
+- **multiprocessing**: parallel evaluation
+
