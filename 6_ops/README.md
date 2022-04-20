@@ -11,7 +11,7 @@ presentation of 15 minutes on their assigned article.
 ## Topics
 
 1. [Automated Antenna Design with Evolutionary Algorithms](articles/1_Antenna.pdf)
-2. [Cellular Encoding Applied to Neurocontrol](articles/2_Cellular encoding.pdf)
+2. [A hybrid genetic algorithm for the traveling salesman problem using generalized partition crossover](articles/9_tsp.pdf)
 3. [Artificial Regulatory Networks and Genetic Programming](articles/4_String GRN.pdf)
 4. [Automated Software Transplantation](articles/6_Genetic Improvement.pdf)
-5. [Environment-driven Open-ended Evolution with a Population of Autonomous Robots](articles/7_EDEA.pdf)
+5. [AutoML-Zero: Evolving Machine Learning Algorithms From Scratch](articles/8_automl.pdf)

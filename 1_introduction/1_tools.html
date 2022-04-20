@@ -51,12 +51,12 @@
           <br/>
           <ol>
               <li><a href="https://d9w.github.io/evolution/1_introduction">Introduction</a></li>
-              <li><a href="https://d9w.github.io/evolution/2_strategies">Evolutionary Strategies</a></li>
-              <li><a href="https://d9w.github.io/evolution/3_moo">Multi-Objective Evolution</a></li>
-              <li><a href="https://d9w.github.io/evolution/4_gp">Evolution of programs, graphs, and networks</a></li>
-              <li><a href="https://d9w.github.io/evolution/5_ops">Genetic representation and operator design</a></li>
-              <li><a href="https://d9w.github.io/evolution/6_behavior">Evolution and behavior</a></li>
-              <li><a href="https://d9w.github.io/evolution/7_constraints">Evolution with constraints</a></li>
+              <li><a href="https://d9w.github.io/evolution/2_ga">Genetic Algorithms</a></li>
+              <li><a href="https://d9w.github.io/evolution/3_strategies">Evolutionary Strategies</a></li>
+              <li><a href="https://d9w.github.io/evolution/4_moo">Multi-Objective Evolution</a></li>
+              <li><a href="https://d9w.github.io/evolution/5_gp">Evolution of programs, graphs, and networks</a></li>
+              <li><a href="https://d9w.github.io/evolution/6_ops">Genetic representation and operator design</a></li>
+              <li><a href="https://d9w.github.io/evolution/7_behavior">Evolution and behavior</a></li>
           </ol>
         </section>
 
@@ -73,9 +73,6 @@
             <div class="textbox">
               These tools are widely used and will be useful well beyond this class. Take time to learn them now.
             </div>
-            <br/>
-            <br/>
-            <img src="../imgs/git_meme.jpg" width="20%" height="auto">
         </section>
 
         <section>
@@ -92,6 +89,60 @@
 
         <section>
             <h2>Git</h2>
+            <br/>
+            <img src="../imgs/clone.png" width="50%" height="auto">
+        </section>
+
+         <section>
+            <h2>Git</h2>
+            <br/>
+            Workflow
+            <br/>
+            <ul>
+              <li><b>Fork</b> this repository to have a referenced copy of it in your account</li>
+              <li><b>Clone</b> your fork to download it locally</li>
+              <li>Create a <b>branch</b> in your repository for your local changes</li>
+              <li><b>Add</b> and <b>commit</b> your modifications</li>
+              <li><b>Push</b> your modifications to the remote server</li>
+            </ul>
+            <br/>
+            <br/>
+            Setup
+            <br/>
+              <pre><code data-trim data-noescape>
+                  git clone https://github.com/USERNAME/evolution
+                  cd evolution
+                  git remote add upstream https://github.com/d9w/evolution
+                  git remote -v
+                  git branch mybranch
+                  git branch -av
+               </pre></code>
+        </section>
+
+        <section>
+            <h2>Git</h2>
+            <br/>
+            Making local changes
+            <br/>
+              <pre><code data-trim data-noescape>
+                  git checkout mybranch
+                  git add plots_notebook.ipynb
+                  git commit -m 'Plots notebook'
+                  git push origin mybranch
+               </pre></code>
+            <br/>
+            <br/>
+            Pulling new class material
+            <br/>
+              <pre><code data-trim data-noescape>
+                  git stash
+                  git checkout master
+                  git pull upstream master
+               </pre></code>
+        </section>
+
+        <section>
+            <h2>Git</h2>
             <h3>Exercise</h3>
             <br/>
             <ul>
@@ -103,7 +154,6 @@
             <br/>
             <img src="../imgs/git-it.png" width="30%" height="auto">
         </section>
-
 
         <section>
             <h2>Julia</h2>
@@ -137,18 +187,16 @@
           Install the following Julia packages using the Julia <a href="https://pkgdocs.julialang.org/v1/getting-started/">package manager</a>.
           <br/>
           <ul>
-            <li>ArcadeLearningEnvironment</li>
-            <li>BlackBoxOptimizationBenchmarking</li>
+            <li><b>Plots</b></li>
+            <li><b>Random</b></li>
+            <li><b>IJulia</b></li>
             <li>Cambrian</li>
             <li>Conda</li>
             <li>Flux</li>
             <li>Images</li>
-            <li>IJulia</li>
             <li>JSON</li>
             <li>LinearAlgebra</li>
-            <li>Plots</li>
             <li>PyCall</li>
-            <li>Random</li>
             <li>Reel</li>
           </ul>
         </section>
@@ -161,7 +209,8 @@
                 <li>Install Julia and Jupyter</li>
                 <li>Create a github account</li>
                 <li><a href="https://help.github.com/en/github/getting-started-with-github/fork-a-repo">Fork</a> this repository</li>
-                <li>Create a notebook in your fork that plots <a href="http://docs.juliaplots.org/latest/tutorial/#Basic-Plotting:-Line-Plots">the tutorial line plot</a> from Plots.jl</li>
+                <li>Create a new <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches">branch</a></li>
+                <li>Create a notebook in the new branch that plots <a href="http://docs.juliaplots.org/latest/tutorial/#Basic-Plotting:-Line-Plots">the tutorial line plot</a> from Plots.jl</li>
                 <li><a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">Git commit</a> and push your notebook to github</li>
             </ul>
             <br/>
