@@ -2,9 +2,10 @@
 
 The 2022 project will focus on the evolution of agents using the <a
 href="https://evolutiongym.github.io/">Evolution Gym</a> suite. To get started
-with evogym, see the [neuroevolution
-notebook](https://d9w.github.io/evolution/neuroevolution/evogym.ipynb) ([Colab
-version](https://colab.research.google.com/github/d9w/evolution/neuroevolution/evogym.ipynb)).
+with evogym, see the [notebook
+source](https://github.com/d9w/evolution/blob/master/neuroevolution/evogym.ipynb)
+([Colab
+version](https://colab.research.google.com/github/d9w/evolution/blob/master/neuroevolution/evogym.ipynb)).
 
 You will need to evolve movement policies for three tasks independently:
 
