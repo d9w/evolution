@@ -8,7 +8,11 @@ algorithm and run it on toy problems.
 
 1. [Tools and format of this class](https://d9w.github.io/evolution/1_introduction/1_tools.html)
 2. [Overview of Evolutionary Computation](https://d9w.github.io/evolution/1_introduction/2_overview.html)
-3. [Evolutionary Algorithms](https://github.com/d9w/evolution/blob/master/1_introduction/3_EAs.ipynb)
+3. [Evolutionary Algorithms](https://github.com/d9w/evolution/blob/master/1_introduction/evolutionary_algorithms.ipynb)
+
+<br>
+[Evolutionary Algorithms on Colab](https://colab.research.google.com/github/d9w/evolution/blob/master/1_introduction/evolutionary_algorithms.ipynb)
+
 
 2020 Videos:
 
