@@ -11,5 +11,5 @@ Problem.
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/2_ga/genetic_algorithm.ipynb)
 
 Previous material:
-    * [Video pt 1](https://youtu.be/Xru4pBs-U24)
-    * [Video pt 2](https://youtu.be/0-yuMz3JDnc)
+* [Video pt 1](https://youtu.be/Xru4pBs-U24)
+* [Video pt 2](https://youtu.be/0-yuMz3JDnc)
