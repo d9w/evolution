@@ -14,7 +14,7 @@ Schedule |
 05/04 | [Genetic Algorithms](2_ga)
 07/04 | [Multi-Objective Evolution](3_moo)
 07/04 | [Genetic Programming](4_gp)
-12/04 | [Symbolic Regression]
+12/04 | [Symbolic Regression](4_gp)
 13/04 | [Evolutionary Strategies](5_strategies)
 14/04 | [CMAES](5_strategies)
 17/04 | [Neuroevolution](neuroevolution)
