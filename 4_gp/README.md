@@ -8,6 +8,12 @@ In this tutorial, we discuss the evolution of programs, graphs, and networks, go
 2. Evolving graphs with CGP
     * [slides](https://d9w.github.io/evolution/4_gp/2_cgp.html)
 
+[Symbolic Regression notebook](https://github.com/d9w/evolution/blob/master/4_gp/symbolic_regression.ipynb)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/4_gp/symbolic_regression.ipynb)
+
+
 Videos
-    * [Evolution of programs](https://youtu.be/-QyD2aYLhnY)
-    * [Evolving graphs with CGP](https://youtu.be/fJX0Dr54huY)
+
+* [Evolution of programs](https://youtu.be/-QyD2aYLhnY)
+* [Evolving graphs with CGP](https://youtu.be/fJX0Dr54huY)

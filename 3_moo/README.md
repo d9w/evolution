@@ -12,5 +12,6 @@ well-known MOEA, on the Travelling Salesman problem.
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/3_moo/NSGA-II.ipynb)
 
 Videos
-    * [Multi-objective Optimization](https://youtu.be/nj3EL630zT0)
-    * [NSGA-II](https://youtu.be/LVGXHpHQxrc)
+
+* [Multi-objective Optimization](https://youtu.be/nj3EL630zT0)
+* [NSGA-II](https://youtu.be/LVGXHpHQxrc)
