@@ -17,7 +17,7 @@ Schedule |
 12/04 | [Symbolic Regression](4_gp)
 13/04 | [Evolutionary Strategies](5_strategies)
 14/04 | [CMAES](5_strategies)
-17/04 | [Neuroevolution](neuroevolution)
+17/04 | [Neuroevolution](5_strategies)
 19/04 | [Project](project)
 20/04 | [Project](project)
 21/04 | [Project](project)
