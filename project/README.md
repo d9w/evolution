@@ -1,10 +1,11 @@
 # Project - Evolution of agents
 
-The 2022 project will focus on the evolution of agents using the <a
-href="https://evolutiongym.github.io/">Evolution Gym</a> suite. To get started
-with evogym, see the [neuroevolution notebook](https://github.com/d9w/evolution/blob/master/neuroevolution/evogym.ipynb)
-([Colab
-version](https://colab.research.google.com/github/d9w/evolution/blob/master/neuroevolution/evogym.ipynb)).
+This project focuses on the evolution of agents using the [Evolution Gym](https://evolutiongym.github.io/Evolution Gym) suite. To get started
+with evogym, see the [documentation](https://evolutiongym.github.io/).
+
+[Neuroevolution in evogym notebook](https://github.com/d9w/evolution/project/evogym.ipynb)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/project/evogym.ipynb)
 
 You will need to evolve movement policies for three tasks independently:
 
@@ -31,16 +32,15 @@ manner:
 + 4th place: 2 points
 + 5th place: 1 point
 
-Project presentations will take place on Thursday, May 5th.
-
-Alternatively, students interested in pursuing co-evolution of robot morphology
-and movement policy are encouraged to do so. The tasks remain the same but the
-morphology is not fixed. The total score will not be compared with the fixed
-morphologies, rather the total evaluation will be based on how the coevolution.
+Project presentations will take place on Friday, May 5th.
 
 You can use the code provided during class for your evolutionary algorithms, and you can also use any code online. Some popular libraries are:
 
 + [cmaes](https://github.com/CyberAgentAILab/cmaes)
 + [pycma](https://github.com/CMA-ES/pycma)
 + [pymoo](https://pymoo.org/)
++ [pyribs](https://pyribs.org/)
++ [neat-python](https://github.com/CodeReclaimers/neat-python)
++ [gplearn](https://github.com/trevorstephens/gplearn)
++ [pycgp](https://github.com/scussatb/pyCGP)
 + [DEAP](https://github.com/DEAP/deap)
