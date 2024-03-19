@@ -13,6 +13,6 @@ pybind11==2.9.0
 pygifsicle==1.0.5
 PyOpenGL==3.1.5
 PyOpenGL-accelerate==3.1.5
-torch==1.10.2
+torch==1.13.1
 ttkbootstrap==1.5.1
 typing==3.7.4.3
