@@ -1,0 +1,63 @@
+constraints - why we didn't encode a constraint handling mechanism in the GA we used in the exercise for the TSP?
+	It's already there
+	The encoding used for the problem restricts the search space**
+	It isn't there and we need to add.
+	We always can find good solutions for the TSP.
+
+Main differences between ga and es?
+	Population size**
+	There is crossover in GA and not in ES.**
+	There is mutation in GA and not in ES.
+	ES performs better than GA.
+	
+What are the benefits of using a population?
+	Obtain useful information about the search space.**	
+	Historical value.
+	We don't need to use a population.
+	We can use mutation more efficiently.
+	
+Why do we care about pareto dominance?
+	We want to select one solution to be the elite.
+	We want to find many solutions that perform differently to each objective.**
+	We don't need to worry about it, the algorithm codes it.
+	We don't, it's possible to compare solutions as in GA.
+	
+What are the components that distinguish NSGA-II to the other algorithms?
+	Crowding distance and non-dominated sorting, in this order.
+	Non-dominated sorting and crowding distance, in this order.**
+	The ability to perform well as the number of objective increases.
+	Crossover and mutation.
+	
+Are the problems with calculating dominance?
+	No, as long as the algorithm uses the non-dominance.
+	Yes, finding if a solution is dominant is computationally expensive.
+	No, it's part of the problem and we just have to acknowledge that.
+	Yes, finding if solutions are dominant as the number of problems increase is computationally expensive.**
+
+How can we deal with problems with non-dominance?
+	We can't.
+	We can increase the population size.**
+	Consider the distribution of solutions in the search space.
+	Only work with more than 3 problems.
+	
+Look at the pymoo webpage, under the problems category. Can NSGA-II deal with:
+	Work with binary or discrete optimization only.	
+ 	Work with all types of problems.**
+ 	Work with continuous problems only.
+ 	For continuous problems, it's better to use ES.
+
+
+About visualizations, why shouldn't we use them?
+	Images are worth a thousand words.
+	They help us understand differences in performance.
+	They provide all information necessary to compare algorithms.**
+	We can see how well an algorithm is performing.
+	
+What it's impossible to verity when using visualizations for multi-objective problems?
+	Quality of solutions.
+	Performance convergence.
+	Distribution of solutions in the objective space.
+	Distribution of solutions in the search space.**
+
+	
+
