@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>7.2 Quality Diversity</title>
+
+		<link rel="stylesheet" href="../reveal/css/reset.css">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/evo.css">
+		<!-- <link rel="stylesheet" href="../reveal/css/custom.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+		 link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>Evolutionary Computation</h1>
+					<h3>Quality Diversity</h3>
+          <br />
+					<img src="../imgs/logo.png" width="30%" height="auto">
+				</section>
+
+        <section>
+            <h2>Illuminating search spaces</h2>
+            <br/>
+            <img src="../imgs/illumination.png" width="50%" height="auto">
+            <br/>
+            <br/>
+            Illuminate the <b>fitness potential</b> of each area of the feature space (behavior space)
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Mouret, Jean-Baptiste, and Jeff Clune. "Illuminating search spaces by mapping elites." arXiv preprint arXiv:1504.04909 (2015).
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>MAP-Elites</h2>
+            <br/>
+            <img src="../imgs/map_elite_algo.png" width="80%" height="auto">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Mouret, Jean-Baptiste, and Jeff Clune. "Illuminating search spaces by mapping elites." arXiv preprint arXiv:1504.04909 (2015).
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>MAP-Elites</h2>
+            <br/>
+            <img src="../imgs/map_elite_robot.png" width="40%" height="auto">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IHQgnpSphEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Cully, Antoine, et al. "Robots that can adapt like animals." Nature 521.7553 (2015): 503-507.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Archive differences</h2>
+            <br/>
+            <img src="../imgs/qd_framework.png" width="60%">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Cully, Antoine, and Yiannis Demiris. "Quality and diversity optimization: A unifying modular framework." IEEE Transactions on Evolutionary Computation 22.2 (2017): 245-259.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Speeding up evaluation</h2>
+            <br/>
+            <img src="../imgs/sail.png" width="40%" height="auto">
+            <br/>
+            Surrogated-Assisted Illumination (SAIL)
+            <br/>
+            <div class="textbox">
+                <small>
+            Gaier, Adam, Alexander Asteroth, and Jean-Baptiste Mouret. "Data-efficient design exploration through surrogate-assisted illumination." Evolutionary computation 26.3 (2018): 381-410.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>SAIL</h2>
+            <br/>
+            <img src="../imgs/sail_2.png" width="50%" height="auto">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Gaier, Adam, Alexander Asteroth, and Jean-Baptiste Mouret. "Data-efficient design exploration through surrogate-assisted illumination." Evolutionary computation 26.3 (2018): 381-410.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Adaptive behavior</h2>
+            <br/>
+            <img src="../imgs/qd_adaptation_2.png" width="50%" height="auto">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Cully, Antoine, et al. "Robots that can adapt like animals." Nature 521.7553 (2015): 503-507.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Adaptive behavior</h2>
+            <br/>
+            <img src="../imgs/mboa.png" width="80%" height="auto">
+            <br/>
+            <br/>
+            <div class="textbox">
+                <small>
+                    Cully, Antoine, et al. "Robots that can adapt like animals." Nature 521.7553 (2015): 503-507.
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Optional Exercise</h2>
+            <div class="textbox">
+            If you didn't watch it during the first lecture, watch the MAP-Elites adaptive behavior video.
+            </div>
+            <br/>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T-c17RKh3uE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+      </div>
+      <div id="footer-container" style="display:none;">
+          <div id="footer">
+              Evolutionary Computation by Dennis G. Wilson
+              <br />
+              <a href="https://github.com/d9w/evolution/">https://github.com/d9w/evolution/</a>
+              <br />
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+          </div>
+      </div>
+		</div>
+
+		<script src="../reveal/js/reveal.js"></script>
+		<script src="../reveal/js/jquery-3.5.0.min.js"></script>
+
+		<script>
+     Reveal.initialize({
+         width: "90%",
+         height: "90%",
+         slideNumber: 'c',
+         transition: 'none',
+         progress: true,
+         hash: true,
+         center: false,
+         dependencies: [
+             { src: '../reveal/plugin/markdown/marked.js' },
+             { src: '../reveal/plugin/markdown/markdown.js' },
+					   { src: '../reveal/plugin/highlight/highlight.js' },
+             { src: '../reveal/plugin/notes/notes.js', async: true }
+         ]
+     });
+     var footer = $('#footer-container').html();
+     $('div.reveal').append(footer);
+		</script>
+	</body>
+</html>

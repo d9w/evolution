@@ -47,6 +47,9 @@
                 <li>Pareto dominance</li>
                 <li>NSGA-II</li>
                 <li>Many-objective optimization</li>
+                <ul>
+                    <li>If F(x) = f_1(x), f_2(x), ...</li>
+                </ul>
             </ul>
         </section>
 
@@ -62,6 +65,7 @@
                 <li><b>NSGA-II</b>: Deb, Kalyanmoy, et al. "A fast and elitist multiobjective genetic algorithm: NSGA-II." IEEE transactions on evolutionary computation 6.2 (2002): 182-197.</li>
                 <li>Deb, Kalyanmoy (2001) Multi-objective optimization using evolutionary algorithms. John-Wiley, Chichester</li>
                 <li><b>MOEA/D</b>: Zhang, Qingfu, and Hui Li. "MOEA/D: A multiobjective evolutionary algorithm based on decomposition." IEEE Transactions on evolutionary computation 11.6 (2007): 712-731.</li>
+                <li><b>SMS-EMOA</b>: Beume, N., Naujoks, B., & Emmerich, M. (2007). SMS-EMOA: Multiobjective selection based on dominated hypervolume. European Journal of Operational Research, 181(3), 1653-1669.</li>
                 <li>Emmerich, Michael TM, and André H. Deutz. "A tutorial on multiobjective optimization: fundamentals and evolutionary methods." Natural computing 17.3 (2018): 585-609. [<a href="https://link.springer.com/content/pdf/10.1007/s11047-018-9685-y.pdf">pdf</a>]</li>
             </ul>
         </section>
@@ -70,18 +74,41 @@
             <h2>Travelling Salesman Problem</h2>
             <br/>
             <img src="../imgs/tarif_autoroute.jpg" width="50%" height="auto">
+
+
         </section>
 
         <section>
             <h2>Pareto dominance</h2>
+            
             <br/>
-            <img src="../imgs/pareto_dominance.png" width="50%" height="auto">
+            <img src="../imgs/Maxima_of_a_point_set.svg.png" width="30%" height="auto">
+
+
+            <ul>A solution is said to Pareto dominate another if it is more optimal in all dimensions.</ul>
+            <ul>Solutions which are not dominated by any other are called "non-dominated".</ul>
         </section>
+
+        <section>
+            <h2>Why dominance?</h2>
+            
+            <br/>
+            <img src="../imgs/pareto_dominance.png" width="50%" height="auto"><br/>   
+
+            <ul>In single-objective problems it's easy to find the highest performing individual - highest fitness.</ul>
+            <ul>In multi-objective problems the the highest performing individual in an objective could be horrible in another objective!</ul>
+            <ul><li>We have f_1(S1) < f_1(S3) and f_2(S1) > f_2(S3) -> S1 and S3 are equally good.</li></ul>
+        </section>
+
+    
 
         <section>
             <h2>Pareto front</h2>
             <br/>
-            <img src="../imgs/pareto.png" width="50%" height="auto">
+            <img src="../imgs/pareto.png" width="50%" height="auto" display="block"margin-left="auto" margin-right="auto">
+            <br/>
+            <ul>The Pareto Front is the set of Pareto Optimal solutions.</ul>
+            <ul>Red points are non-dominated by each other and dominate the other points.</ul>
         </section>
 
         <section>
@@ -93,7 +120,7 @@
         <section>
             <h2>NSGA-II Overview</h2>
             <br/>
-            <img src="../imgs/nsgaii.png" width="50%" height="auto">
+            <img src="../imgs/nsga2_flowchat.png" width="50%" height="auto">
             <br/>
             <div class="textbox"><small>
             Deb, Kalyanmoy, et al. "A fast and elitist multiobjective genetic algorithm: NSGA-II." IEEE transactions on evolutionary computation 6.2 (2002): 182-197.
@@ -113,7 +140,7 @@
             </div>
         </section>
 
-        <section>
+        <!-- <section>
             <h2>Fast non-dominated sort</h2>
             <br/>
             <img src="../imgs/fast_non_dominated.png" width="50%" height="auto">
@@ -123,15 +150,15 @@
                 <a href="http://repository.ias.ac.in/83498/1/2-a.pdf">[pdf]</a>
             </small>
             </div>
-        </section>
+        </section> -->
 
         <section>
             <h2>Crowding Distance Assignment</h2>
-            <br/>
+            <!-- <br/>
             <img src="../imgs/crowding_distance.png" width="50%" height="auto">
+            <br/> -->
             <br/>
-            <br/>
-            <img src="../imgs/crowding_distance_calculation.png" width="25%" height="auto">
+            <img src="../imgs/crowding_distance_calculation.png" width="35%" height="auto">
             <br/>
             <div class="textbox"><small>
                 Deb, Kalyanmoy, et al. "A fast and elitist multiobjective genetic algorithm: NSGA-II." IEEE transactions on evolutionary computation 6.2 (2002): 182-197.
@@ -201,7 +228,7 @@
       </div>
       <div id="footer-container" style="display:none;">
           <div id="footer">
-              Evolutionary Computation by Dennis G. Wilson
+              Evolutionary Computation by Dennis G. Wilson, Yuri Lavinas, Paul Templier
               <br />
               <a href="https://github.com/d9w/evolution/">https://github.com/d9w/evolution/</a>
               <br />
