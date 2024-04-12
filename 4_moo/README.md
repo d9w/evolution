@@ -9,7 +9,7 @@ well-known MOEA, on the Travelling Salesman problem.
 
 [NSGA-II notebook](https://github.com/d9w/evolution/blob/master/4_moo/NSGA-II.ipynb)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/3_moo/NSGA-II.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/4_moo/NSGA-II.ipynb)
 
 Videos
 
