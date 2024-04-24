@@ -32,7 +32,7 @@ manner:
 + 4th place: 2 points
 + 5th place: 1 point
 
-Project presentations will take place on Friday, May 5th.
+Project presentations will take place on Friday, May 7th.
 
 You can use the code provided during class for your evolutionary algorithms, and you can also use any code online. Some popular libraries are:
 
