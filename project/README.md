@@ -3,7 +3,7 @@
 This project focuses on the evolution of agents using the [Evolution Gym](https://evolutiongym.github.io/Evolution Gym) suite. To get started
 with evogym, see the [documentation](https://evolutiongym.github.io/).
 
-[Neuroevolution in evogym notebook](https://github.com/d9w/evolution/project/evogym.ipynb)
+[Neuroevolution in evogym notebook](https://github.com/d9w/evolution/blob/master/project/evogym.ipynb)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/project/evogym.ipynb)
 
