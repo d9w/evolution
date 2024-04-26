@@ -7,6 +7,10 @@ with evogym, see the [documentation](https://evolutiongym.github.io/).
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/project/evogym.ipynb)
 
+[Notebook for gifs](https://github.com/d9w/evolution/blob/master/project/video/gif.ipynb)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/d9w/evolution/blob/master/project/video/gif.ipynb)
+
 You will need to evolve movement policies for three tasks independently:
 
 + Walker-v0 (easy)
