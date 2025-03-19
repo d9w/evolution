@@ -18,5 +18,5 @@ example of using CMA-ES to search for neural network parameters.
 
 Videos
 
+* [Evolutionary Strategies](https://youtu.be/ds66pV7Ob0U)
 * [CMAES](https://youtu.be/V0ccukpgbL4)
-* [Neuroevolution](https://youtu.be/9NwBjoQKjOw)
