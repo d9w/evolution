@@ -10,13 +10,13 @@ class](1_introduction).
 
 Schedule | 
 --- | ---
-03/04 | [Introduction](1_introduction) | [Genetic Algorithms](2_ga)
-05/04 | [Evolutionary Strategies](3_strategies)
-10/04 | [Neuroevolution](3_strategies)
-12/04 | [Multi-Objective Evolution](4_moo) | [Behavior and Novelty](5_behavior)
-22/04 | [Genetic Programming](6_gp) | [Symbolic Regression](6_gp)
-24/04 | [Project](project)
-29/04 | [Project](project)
-02/05 | [Project](project)
-06/05 | [Project](project)
-07/05 | [Presentations](project)
+24/03 | [Introduction](introduction) | [Genetic Algorithms](ga)
+25/03 | [Evolutionary Strategies](strategies)
+26/03 | [Neuroevolution](neuroevolution)
+27/03 | [Multi-Objective Evolution](moo) | [Behavior and Novelty](behavior)
+09/04 | [Genetic Programming](gp) | [Symbolic Regression](gp)
+11/04 | [Project](project)
+23/04 | [Project](project)
+30/04 | [Project](project)
+05/05 | [Project](project)
+06/05 | [Presentations](project)
